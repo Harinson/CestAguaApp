@@ -3,7 +3,7 @@ import 'package:dio/dio.dart';
 class NewProductUsecase {
   NewProductUsecase();
 
-  Future<void> call({
+  Future<bool> call({
     required String description,
     required double price,
   }) async {
@@ -12,8 +12,9 @@ class NewProductUsecase {
         "descricao": description,
         "preco": price,
       });
+      return true;
     } catch (e) {
-      print(e);
+      return false;
     }
   }
 }

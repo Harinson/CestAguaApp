@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: Observer(
         builder: (context) {
-          return _controller.floating();
+          return _controller.floating(context);
         },
       ),
     );
