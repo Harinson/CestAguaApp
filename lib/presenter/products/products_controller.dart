@@ -1,5 +1,5 @@
-import 'package:entrega_agua/domain/entities/product_entity.dart';
-import 'package:entrega_agua/domain/usecases/get_products_usecase.dart';
+import '../../domain/entities/product_entity.dart';
+import '../../domain/usecases/get_products_usecase.dart';
 import 'package:mobx/mobx.dart';
 
 part 'products_controller.g.dart';

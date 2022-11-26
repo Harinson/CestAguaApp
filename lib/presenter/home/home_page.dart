@@ -1,10 +1,10 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
-import 'package:entrega_agua/presenter/clients/clients_page.dart';
-import 'package:entrega_agua/presenter/home/home_controller.dart';
-import 'package:entrega_agua/presenter/products/products_page.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+
+import '../clients/clients_page.dart';
+import '../products/products_page.dart';
+import 'home_controller.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -51,23 +51,23 @@ class _HomePageState extends State<HomePage> {
       bottomNavigationBar: BottomNavyBar(
         items: [
           BottomNavyBarItem(
-            icon: const Icon(Icons.inventory_2),
+            icon: const Icon(Icons.inventory_rounded),
             title: const Center(child: Text('Produtos')),
             activeColor: Colors.red,
           ),
           BottomNavyBarItem(
-            icon: const Icon(Icons.people),
+            icon: const Icon(Icons.people_outline_rounded),
             title: const Center(child: Text('Clientes')),
             activeColor: Colors.purpleAccent,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.message),
-            title: Text('Messages'),
+            icon: const Icon(Icons.check_box_outlined),
+            title: const Center(child: Text('Pedidos')),
             activeColor: Colors.pink,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.settings),
-            title: Text('Settings'),
+            icon: const Icon(Icons.auto_graph),
+            title: const Center(child: Text('Histórico')),
             activeColor: Colors.blue,
           ),
         ],

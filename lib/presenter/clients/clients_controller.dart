@@ -1,8 +1,7 @@
-import 'package:entrega_agua/domain/entities/client_entity.dart';
-import 'package:entrega_agua/domain/entities/product_entity.dart';
-import 'package:entrega_agua/domain/usecases/get_clients_usecase.dart';
-import 'package:entrega_agua/domain/usecases/get_products_usecase.dart';
 import 'package:mobx/mobx.dart';
+
+import '../../domain/entities/client_entity.dart';
+import '../../domain/usecases/get_clients_usecase.dart';
 
 part 'clients_controller.g.dart';
 

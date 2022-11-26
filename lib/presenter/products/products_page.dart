@@ -1,11 +1,9 @@
-import 'package:entrega_agua/presenter/products/products_controller.dart';
-import 'package:entrega_agua/presenter/products/widgets/image_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:mobx/mobx.dart';
+
+import 'products_controller.dart';
+import 'widgets/image_widget.dart';
 
 class ProductsPage extends StatefulWidget {
   const ProductsPage({super.key});

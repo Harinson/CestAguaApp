@@ -1,12 +1,12 @@
-import 'package:entrega_agua/domain/usecases/new_product_usecase.dart';
-import 'package:entrega_agua/presenter/home/home_controller.dart';
-import 'package:entrega_agua/presenter/products/products_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import '../domain/usecases/get_clients_usecase.dart';
 import '../domain/usecases/get_products_usecase.dart';
+import '../domain/usecases/new_product_usecase.dart';
 import '../presenter/clients/clients_controller.dart';
+import '../presenter/home/home_controller.dart';
 import '../presenter/home/home_page.dart';
+import '../presenter/products/products_controller.dart';
 
 class AppModule extends Module {
   @override

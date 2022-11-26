@@ -1,6 +1,6 @@
 import 'package:dio/dio.dart';
-import 'package:entrega_agua/domain/entities/product_entity.dart';
-import 'package:entrega_agua/infra/models/product_model.dart';
+import '../entities/product_entity.dart';
+import '../../infra/models/product_model.dart';
 
 class GetProductsUseCase {
   GetProductsUseCase();

@@ -1,11 +1,10 @@
 import 'package:currency_text_input_formatter/currency_text_input_formatter.dart';
-import 'package:entrega_agua/domain/entities/product_entity.dart';
-import 'package:entrega_agua/domain/usecases/get_products_usecase.dart';
-import 'package:entrega_agua/domain/usecases/new_product_usecase.dart';
-import 'package:entrega_agua/presenter/home/widgets/text_form_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:mobx/mobx.dart';
+
+import '../../domain/usecases/new_product_usecase.dart';
+import 'widgets/text_form_component.dart';
 
 part 'home_controller.g.dart';
 
@@ -42,7 +41,7 @@ abstract class HomeControllerBase with Store {
       context: context,
       builder: ((context) {
         return AlertDialog(
-          title: Text('Novo Produto'),
+          title: const Text('Novo Produto'),
           content: Form(
             key: formKey,
             child: Column(
@@ -91,7 +90,7 @@ abstract class HomeControllerBase with Store {
                 Modular.to.pop();
               },
               color: Colors.red.withOpacity(0.8),
-              child: Text('Cancelar'),
+              child: const Text('Cancelar'),
             ),
             MaterialButton(
               onPressed: () {
@@ -103,7 +102,7 @@ abstract class HomeControllerBase with Store {
                 }
               },
               color: Colors.green.withOpacity(0.8),
-              child: Text('Adicionar'),
+              child: const Text('Adicionar'),
             ),
           ],
         );

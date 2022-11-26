@@ -1,5 +1,3 @@
-import 'package:entrega_agua/domain/entities/product_entity.dart';
-
 import '../../domain/entities/client_entity.dart';
 
 class ClientModel extends ClientEntity {

@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:entrega_agua/domain/entities/client_entity.dart';
+import '../entities/client_entity.dart';
 
 import '../../infra/models/client_model.dart';
 
