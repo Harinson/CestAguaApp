@@ -4,9 +4,9 @@ import 'package:mobx/mobx.dart';
 
 part 'products_controller.g.dart';
 
-class ProductsController = _ProductsControllerBase with _$ProductsController;
+class ProductsController = ProductsControllerBase with _$ProductsController;
 
-abstract class _ProductsControllerBase with Store {
+abstract class ProductsControllerBase with Store {
   @observable
   bool isLoaded = false;
   @observable

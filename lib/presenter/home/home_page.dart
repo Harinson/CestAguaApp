@@ -1,4 +1,5 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:entrega_agua/presenter/clients/clients_page.dart';
 import 'package:entrega_agua/presenter/home/home_controller.dart';
 import 'package:entrega_agua/presenter/products/products_page.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,7 @@ class _HomePageState extends State<HomePage> {
           },
           children: const [
             ProductsPage(),
-            Center(child: Text('Search')),
+            ClientsPage(),
             Center(child: Text('Profile')),
             Center(child: Text('config')),
           ],
@@ -55,8 +56,8 @@ class _HomePageState extends State<HomePage> {
             activeColor: Colors.red,
           ),
           BottomNavyBarItem(
-            icon: Icon(Icons.people),
-            title: Text('Users'),
+            icon: const Icon(Icons.people),
+            title: const Center(child: Text('Clientes')),
             activeColor: Colors.purpleAccent,
           ),
           BottomNavyBarItem(
@@ -76,11 +77,11 @@ class _HomePageState extends State<HomePage> {
         },
         selectedIndex: _controller.currentIndex,
       ),
-      floatingActionButton: Observer(
-        builder: (context) {
-          return _controller.floating(context);
-        },
-      ),
+      // floatingActionButton: Observer(
+      //   builder: (context) {
+      //     return _controller.floating(context);
+      //   },
+      // ),
     );
   }
 }
