@@ -46,7 +46,6 @@ class _HomePageState extends State<HomePage> {
             ProductsPage(),
             ClientsPage(),
             RequestsPage(),
-            Center(child: Text('config')),
           ],
         ),
       ),
@@ -66,11 +65,6 @@ class _HomePageState extends State<HomePage> {
             icon: const Icon(Icons.check_box_outlined),
             title: const Center(child: Text('Pedidos')),
             activeColor: Colors.pink,
-          ),
-          BottomNavyBarItem(
-            icon: const Icon(Icons.auto_graph),
-            title: const Center(child: Text('Histórico')),
-            activeColor: Colors.blue,
           ),
         ],
         onItemSelected: (index) {

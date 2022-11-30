@@ -44,6 +44,7 @@ dependencies:
   equatable: ^2.0.5
   dio: ^4.0.6
   currency_text_input_formatter: ^2.1.8
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:

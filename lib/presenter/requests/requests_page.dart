@@ -43,7 +43,14 @@ class _RequestsPageState extends State<RequestsPage> {
                       child: Material(
                         color: Colors.white,
                         child: InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            Modular.to.pushNamed(
+                              '/request',
+                              arguments: {
+                                'request': _controller.requests[index],
+                              },
+                            );
+                          },
                           child: Container(
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8),
@@ -68,8 +75,17 @@ class _RequestsPageState extends State<RequestsPage> {
                                         const SizedBox(
                                           height: 5,
                                         ),
-                                        Text(
-                                            'Pedido #${_controller.requests[index].id.toString()}'),
+                                        Hero(
+                                          tag: _controller.requests[index].id,
+                                          child: Text(
+                                            'Pedido #${_controller.requests[index].id.toString()}',
+                                            style: const TextStyle(
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 14,
+                                              color: Colors.black,
+                                            ),
+                                          ),
+                                        ),
                                         const SizedBox(
                                           height: 5,
                                         ),
