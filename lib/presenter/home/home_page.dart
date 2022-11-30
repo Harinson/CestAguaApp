@@ -1,5 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
+import 'package:entrega_agua/presenter/requests/requests_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 import '../clients/clients_page.dart';
@@ -43,7 +45,7 @@ class _HomePageState extends State<HomePage> {
           children: const [
             ProductsPage(),
             ClientsPage(),
-            Center(child: Text('Profile')),
+            RequestsPage(),
             Center(child: Text('config')),
           ],
         ),
